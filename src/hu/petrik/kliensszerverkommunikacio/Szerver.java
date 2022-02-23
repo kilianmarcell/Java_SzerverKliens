@@ -1,6 +1,5 @@
 package hu.petrik.kliensszerverkommunikacio;
 
-import javax.xml.crypto.Data;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
