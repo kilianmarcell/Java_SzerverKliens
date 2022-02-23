@@ -1,4 +1,4 @@
-package hu.petrik.kliensszerverkommunikacio;
+package hu.petrik.kliensszerverkommunikacio.feladat1;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -21,6 +21,15 @@ public class Szerver {
 
             System.out.println("Az ügyfél neve: " + ugyfel.getHostName());
             System.out.println("Az ügyfél címe: " + ugyfel.getHostAddress());
+
+            while (true) {
+                int sugar = ugyfeltol.readInt();
+                double kerulet = 2 * sugar * Math.PI;
+                double terulet = Math.pow(sugar, 2) * Math.PI;
+
+                ugyfelnek.writeDouble(kerulet);
+                ugyfelnek.writeDouble(terulet);
+            }
         } catch (IOException e) {
             System.out.println(e);
         }
