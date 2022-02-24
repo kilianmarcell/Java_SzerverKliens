@@ -47,8 +47,8 @@ public class Indian {
             s += i + " ";
         }
 
-        return "Név: " + nev + "\nTörzs: " + torzs + "\n" +
-                "Nem: " + nem + "\nÉletkor: " + eletkor + "\n" +
-                "Tulajdonok: " + s;
+        return "Név: " + nev + " Törzs: " + torzs +
+                " Nem: " + nem + " Életkor: " + eletkor +
+                " Tulajdonok: " + s + "\n";
     }
 }
